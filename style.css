@@ -78,7 +78,7 @@ main {
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 600px;
+    height: 800px;
     background-image: url("./img/Banner.jpg");
     background-position: center;
     background-size: cover;
@@ -261,6 +261,11 @@ main h2 {
 .join h1{
     font-size: 2rem;
     font-style: italic;
+}
+
+.join h1 b{
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 900px){
