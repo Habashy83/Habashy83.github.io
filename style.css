@@ -1,0 +1,288 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+/*Header Section*/
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 110px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    /*border: 1px solid black;*/
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(57, 78, 20);
+}
+
+nav ul {
+    min-width: 400px;
+    text-align: end;
+}
+
+@media only screen and (max-width: 730px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+.logo img {
+    height: 100px;
+    margin: 0 10px 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+
+    font-weight: bold;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Banner Section*/
+
+main {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 600px;
+    background-image: url("./img/Banner.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 4px;
+}
+
+main .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px 30px;
+    background-color: rgba(51, 80, 44, 0.397);
+    margin-right: 50px;
+    height: 400px;
+    box-shadow: 5px 5px 10px black;
+    width: 330px;
+    color: wheat;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main h2 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 730px) {
+    main {
+        justify-content: center;
+    }
+
+    main .textbox {
+        margin-right: 0;
+    }
+}
+
+/*quote section*/
+
+.quoteSection {
+    display: flex;
+    margin: 20px 0;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    gap: 10px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+.quoteSection h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+    font-size: 3rem;
+}
+
+.quoteSection h4 {
+    line-height: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 730px) {
+    .quoteSection {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .quoteSection h4 {
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .quoteSection h1 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        line-height: 3rem;
+        font-size: 3rem;
+    }
+}
+
+/*activity Section*/
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkolivegreen;
+}
+
+.activity h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: antiquewhite;
+}
+
+.actpics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-content: space-around;
+    gap: 20px;
+    padding-bottom: 30px;
+
+}
+
+.card {
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.61);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+.card img {
+    width: 400px;
+    height: auto;
+}
+
+@media only screen and (max-width: 730px) {
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*joinUs Section*/
+
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+.join .container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img{
+    width: 400px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.863);
+}
+
+.join h2{
+    margin: 70px;
+    font-size: 2rem;
+}
+
+.join h1{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 900px){
+    .line{
+        flex-direction: column;
+    }
+
+    .dn{
+        flex-direction: column-reverse;
+    }
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    align-items: center;
+}
+
+footer h3{
+    margin-left: 20px;
+}
