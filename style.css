@@ -261,6 +261,7 @@ main h2 {
 .join h1{
     font-size: 2rem;
     font-style: italic;
+    text-align: center;
 }
 
 .join h1 b{
@@ -275,6 +276,9 @@ main h2 {
 
     .dn{
         flex-direction: column-reverse;
+    }
+    .join h1{
+        max-width: 90%;
     }
 }
 
